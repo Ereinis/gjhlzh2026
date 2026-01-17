@@ -1,0 +1,85 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body {
+  font-family: Inter, sans-serif;
+  color: #f5d9a6;
+
+  background:
+    linear-gradient(rgba(15, 8, 4, 0.38), rgba(15, 8, 4, 0.38)),
+    url("Jan\ 17\,\ 2026\,\ 09_43_19\ PM.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  min-height: 100vh;
+}
+
+header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:24px 64px;
+    border-bottom:1px solid rgba(255,215,150,.2)
+}
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-family:Cinzel,serif;
+    font-size:22px;
+    font-weight:700
+}
+nav{
+    display:flex;
+    gap:32px;
+    font-size:15px
+}
+nav a{
+    text-decoration:none;
+    color:#e8c98b;
+    opacity:.85
+}
+nav a:hover{opacity:1}
+.hero{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 24px
+}
+.hero h1{
+    font-family:Cinzel,serif;
+    font-size:64px;
+    font-weight:700;
+    margin-bottom:24px
+}
+.hero p{
+    font-size:18px;
+    max-width:600px;
+    margin-bottom:40px;
+    opacity:.9
+}
+.hero button{
+    background:linear-gradient(135deg,#f2c87c,#d59b4a);
+    border:none;
+    border-radius:12px;
+    padding:14px 36px;
+    font-size:16px;
+    font-weight:500;
+    color:#3a1d0f;
+    cursor:pointer
+}
+.hero button:hover{opacity:.9}
+.container {
+  max-width: 800px;     /* kontrollon gjerësinë */
+  margin: 0 auto;       /* e vendos në qendër */
+}
+
+.container p {
+  text-align: left;     /* tekst majtas */
+  line-height: 1.7;
+  font-size: 17px;
+  margin-bottom: 24px;
+}

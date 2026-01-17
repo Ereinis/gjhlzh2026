@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pesha e Fjalës – Analizë veprash letrare</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Inter, sans-serif;
+      color: #f5d9a6;
+      background:
+        linear-gradient(rgba(15, 8, 4, 0), rgba(15, 8, 4, 0)),
+        url("f68c2e07-cc6e-422e-9165-ca439879471c.png");
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+    }
+
+    /* ===== NAVBAR ===== */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 64px;
+      border-bottom: 1px solid rgba(255, 200, 140, 0.25);
+    }
+
+    .logo {
+      font-family: Cinzel, serif;
+      font-size: 22px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    nav {
+      display: flex;
+      gap: 28px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #e8c98b;
+      font-size: 15px;
+      opacity: 0.85;
+    }
+
+    nav a:hover {
+      opacity: 1;
+    }
+
+    /* ===== PAGE CONTENT ===== */
+    .analysis-page {
+      padding: 80px 64px 120px;
+    }
+
+    .analysis-header {
+      max-width: 720px;
+      margin: 0 auto 64px;
+      text-align: center;
+    }
+
+    .analysis-header h1 {
+      font-family: Cinzel, serif;
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+
+    .analysis-header p {
+      font-size: 17px;
+      line-height: 1.6;
+      opacity: 0.85;
+    }
+
+    /* ===== GRID ===== */
+    .analysis-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* ===== CARD ===== */
+    .analysis-card {
+      background: rgba(35, 18, 10, 0.85);
+      border: 1px solid rgba(255, 190, 120, 0.3);
+      border-radius: 16px;
+      padding: 28px;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+      cursor: pointer;
+    }
+
+    .analysis-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(255, 190, 120, 0.6);
+    }
+
+    .analysis-card h3 {
+      font-family: Cinzel, serif;
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+
+    .analysis-card p {
+      font-size: 15px;
+      line-height: 1.6;
+      opacity: 0.85;
+      margin-bottom: 20px;
+    }
+
+    .analysis-card span {
+      font-size: 14px;
+      font-weight: 500;
+      color: #f2c87c;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .analysis-page {
+        padding: 64px 24px 100px;
+      }
+
+      .analysis-header h1 {
+        font-size: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">📖 Pesha e Fjalës</div>
+    <nav>
+      <a href="index.html">Kryefaqja</a>
+      <a href="alv.html">Analizë veprash letrare</a>
+      <a href="rstk.html">Multimedia Interaktive</a>
+      <a href="njtprgj.html">Produkti</a>
+    </nav>
+  </header>
+
+  <!-- PAGE CONTENT -->
+  <section class="analysis-page">
+
+    <div class="analysis-header">
+      <h1>Analizë veprash letrare</h1>
+      <p>
+        Analiza të strukturuara dhe të qarta për veprat kryesore të letërsisë
+        shqiptare dhe botërore, të përshtatshme për nxënës dhe studentë.
+      </p>
+    </div>
+
+    <div class="analysis-grid">
+
+      <div class="analysis-card">
+        <h3>Bagëti e Bujqësi</h3>
+        <p>
+          Analizë tematike dhe stilistike e veprës së Naim Frashërit, me fokus
+          romantizmin dhe ndjenjën atdhetare.
+        </p>
+        <span>Lexo analizën →</span>
+      </div>
+
+      <div class="analysis-card">
+        <h3>Lahuta e Malcis</h3>
+        <p>
+          Studim mbi epikën kombëtare, figurat letrare dhe simbolikën historike
+          të veprës së Gjergj Fishtës.
+        </p>
+        <span>Lexo analizën →</span>
+      </div>
+
+      <div class="analysis-card">
+        <h3>Prilli i Thyer</h3>
+        <p>
+          Analizë e konfliktit, psikologjisë së personazheve dhe rolit të Kanunit
+          në romanin e Ismail Kadaresë.
+        </p>
+        <span>Lexo analizën →</span>
+      </div>
+
+      <div class="analysis-card">
+        <h3>Hamleti</h3>
+        <p>
+          Analizë e tragjedisë së Shekspirit: dilemat morale, monologët dhe
+          struktura dramatike.
+        </p>
+        <span>Lexo analizën →</span>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
