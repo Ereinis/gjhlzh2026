@@ -4,7 +4,7 @@ body {
   color: #f5d9a6;
 
   background:
-    linear-gradient(rgba(15, 8, 4, 0.38), rgba(15, 8, 4, 0.38)),
+    linear-gradient(rgba(188, 157, 101, 0.578), rgba(172, 133, 78, 0.244)),
     url("Jan\ 17\,\ 2026\,\ 09_43_19\ PM.png");
 
   background-size: cover;
@@ -62,13 +62,13 @@ nav a:hover{opacity:1}
     opacity:.9
 }
 .hero button{
-    background:linear-gradient(135deg,#f2c87c,#d59b4a);
+    background:linear-gradient(135deg,rgb(242, 200, 124),rgb(213, 155, 74));
     border:none;
     border-radius:12px;
     padding:14px 36px;
-    font-size:16px;
+    font-size:20px;
     font-weight:500;
-    color:#3a1d0f;
+    color:#000000;
     cursor:pointer
 }
 .hero button:hover{opacity:.9}
