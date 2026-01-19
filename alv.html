@@ -18,9 +18,10 @@
     body {
       font-family: Inter, sans-serif;
       color: #f5d9a6;
-      background:
-        linear-gradient(rgba(15, 8, 4, 0), rgba(15, 8, 4, 0)),
-        url("f68c2e07-cc6e-422e-9165-ca439879471c.png");
+        background:
+          linear-gradient(rgba(188, 157, 101, 0.578), rgba(172, 133, 78, 0.244)),
+          url("Jan\ 17\,\ 2026\,\ 09_43_19\ PM.png");
+
       background-size: cover;
       background-position: center;
       min-height: 100vh;
@@ -86,9 +87,9 @@
     /* ===== GRID ===== */
     .analysis-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
       gap: 32px;
-      max-width: 1200px;
+      max-width: 1600px;
       margin: 0 auto;
     }
 
@@ -126,6 +127,25 @@
       color: #f2c87c;
     }
 
+    .full-analysis {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, opacity 0.3s ease;
+      opacity: 0;
+    }
+
+    .analysis-card.expanded .full-analysis {
+      max-height: 650px;
+      opacity: 1;
+    }
+
+    .read-more {
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 8px;
+    }
+
+
     /* ===== RESPONSIVE ===== */
     @media (max-width: 768px) {
       header {
@@ -141,8 +161,13 @@
         font-size: 40px;
       }
     }
+    .analysis-card.expanded {
+      border-color: rgba(255, 200, 140, 0.8);
+    }
+
   </style>
 </head>
+
 
 <body>
 
@@ -153,7 +178,7 @@
     <a href="index.html">Kryefaqja</a>
     <a href="alv.html">Analizë veprash letrare</a>
     <a href="rstk.html">Multimedia</a>
-    <a href="rstk.html">Interaktive</a>
+    <a href="rstkinter.html">Interaktive</a>
     <a href="njtprgj.html">Produkti</a>
     </nav>
   </header>
@@ -172,43 +197,137 @@
     <div class="analysis-grid">
 
       <div class="analysis-card">
-        <h3>Bagëti e Bujqësi</h3>
-        <p>
-          Analizë tematike dhe stilistike e veprës së Naim Frashërit, me fokus
-          romantizmin dhe ndjenjën atdhetare.
+        <h3>Migjeni – Poema e mjerimit</h3>
+
+        <p class="preview">
+          1. “Kafshatë që s'kapërdihet asht, or vlla, mjerimi…”
+          <br>2. “Mjerimi punon, punon dit e natë…”
+          <br>3. “Mjerimi s'don mshirë. Por don vetëm të drejt!”
         </p>
-        <span>Lexo analizën →</span>
+
+        <!-- PJESA E FSHEHUR -->
+        <div class="full-analysis">
+          <p>
+            Fragmenti i parë tregon dhimbjen dhe shtypjen që njerëzit përjetojnë në jetën e përditshme; fjala është e frikshme dhe e rëndë, duke krijuar një ndjenjë të pamundur për t’u kapërcyer.
+            <br>Fragmenti i dytë paraqet padrejtësinë ekonomike dhe shfrytëzimin social; thekson vuajtjen e vazhdueshme dhe dhunën që shoqëria ushtron mbi individin.
+            <br>Fragmenti i tretë, megjithatë, shfaq një përpjekje për drejtësi; këtu fjala është kritike dhe drejtësuese, duke nxitur reagim dhe ndërgjegjësim për ndryshim.
+
+          </p>
+        </div>
+
+        <span class="read-more">Lexo analizën →</span>
+      </div>
+
+
+      <div class="analysis-card">
+        <h3>Gjergj Fishta – Lahuta e Malcis</h3>
+
+        <p class="preview">
+          1.	“Hej, moj Zânë, ti kjosh e bardhë! Me u kumtue me ‘i kangë kreshnike, me këndue lavdinë e të parëve e me mbajtë gjallë shpirtin kombëtar…”
+          <br>2.	“Prandaj vetë u çova fjalë Dér n’ London nji herë me dalë, Na ktû s’ bashku me vendue, Ket Shqypní si m’ e shestue…”
+
+        </p>
+
+        <!-- PJESA E FSHEHUR -->
+        <div class="full-analysis">
+          <p>
+            Fragmenti i parë është ndërtues dhe frymëzues; përdorimi i fjalës promovon heroizmin shqiptar dhe ndjenjën e krenarisë kombëtare.
+            <br>Fragmenti i dytë tregon përdorimin e fjalës për organizim dhe mbrojtje të kombit; fjala këtu nxit drejtësi, vendosmëri dhe ndjenjën e vetëvendosjes.
+
+
+          </p>
+        </div>
+
+        <span class="read-more">Lexo analizën →</span>
       </div>
 
       <div class="analysis-card">
-        <h3>Lahuta e Malcis</h3>
-        <p>
-          Studim mbi epikën kombëtare, figurat letrare dhe simbolikën historike
-          të veprës së Gjergj Fishtës.
+        <h3>Fan Noli – Fjalimi në Lidhjen e Kombeve</h3>
+
+        <p class="preview">
+          1.	“Është e vërtetë që Lidhja e Kombeve ka bërë disa shërbime të vogla… por mos më jepni atë hua prej 500 milionësh fr.ar., që më premtuat…”
+          <br>2.	“…varroseni në dosjet e vdekura të Sekretariatit… kjo do të thotë, natyrisht, se e gjithë kjo histori ka mbaruar siç mbarojnë flluskat e sapunit.”
+
+
         </p>
-        <span>Lexo analizën →</span>
+
+        <!-- PJESA E FSHEHUR -->
+        <div class="full-analysis">
+          <p>
+            Fragmenti i parë përdor gjuhën kritike dhe të mençur për të denoncuar padrejtësinë ndërkombëtare; fjala shërben si instrument për drejtësi dhe kërkesë zgjidhjesh.
+            <br>Fragmenti i dytë është ironik dhe i fuqishëm; tregon mungesën e përgjegjësisë dhe dhunën burokratike, duke nxitur reflektim dhe ndërgjegjësim.
+          </p>
+        </div>
+
+        <span class="read-more">Lexo analizën →</span>
       </div>
+
 
       <div class="analysis-card">
-        <h3>Prilli i Thyer</h3>
-        <p>
-          Analizë e konfliktit, psikologjisë së personazheve dhe rolit të Kanunit
-          në romanin e Ismail Kadaresë.
+        <h3>Tekst Mediatik</h3>
+
+        <p class="preview">
+           Politikani: Edi Rama – Kryeministër i Shqipërisë
+           <br>është thënë: Në një postim në rrjetin social X (ish-Twitter)
+            <br>Data: 18.01.2026
+            <br>Burimi mediatik: Artikull online tek CNA Albania — “The political media pots are rumbling” 
         </p>
-        <span>Lexo analizën →</span>
-      </div>
+
+        <!-- PJESA E FSHEHUR -->
+        <div class="full-analysis">
+          <p>
+            “Tenxheret politike dhe mediatike po bubullojnë dhe po bëjnë aq shumë zhurmë, sa duket sikur jo Shqipëria është ftuar në tryezën e paqes të Presidentit Trump, por një vend armik i Shqipërisë!... GËNJESHTËR që Shqipëria do të paguajë 1 miliard euro. GËNJESHTËR që palestinezët do të vijnë në Shqipëri. GËNJESHTËR… E vërteta është shumë e thjeshtë… Tenxheret politike dhe mediatike të Parlamentit tonë janë vetëm kanaçe të zhurmshme të Shqipërisë së vjetër.”
+            <br><br><br>Kjo gjuhë mund të konsiderohet kritike dhe konfliktuale ndaj mediave, sepse nënkupton se disa media po përhapin informacione të gabuara apo të ekzagjeruara. Kjo është një formë komunikimi që politikanët herë-herë përdorin për të delegjitimuar kritikat dhe për të mbrojtur pozicionin e tyre, duke e paraqitur vetë si objekt të sulmeve jo të bazuara.
+
+          </p>
+        </div>
+
+        <span class="read-more">Lexo analizën →</span>
+        </div>
+
 
       <div class="analysis-card">
-        <h3>Hamleti</h3>
-        <p>
-          Analizë e tragjedisë së Shekspirit: dilemat morale, monologët dhe
-          struktura dramatike.
-        </p>
-        <span>Lexo analizën →</span>
-      </div>
+        <h3>Biblografite e autorit</h3>
 
+        <p class="preview">
+           Migjeni – Poema e mjerimit
+        <br>1.	<a href="https://letersishqip.com/migjeni/krijime-letrare/poema-e-mjerimit">https://letersishqip.com/migjeni/krijime-letrare/poema-e-mjerimit</a>
+        <br>2.  <a href="https://hasanprishtina.edu.mk/wp-content/uploads/2020/04/%E2%80%9DPoema-e-mjerimit%E2%80%9DMigjeni-faq.54.pdf">https://hasanprishtina.edu.mk/wp-content/uploads/2020/04/%E2%80%9DPoema-e-mjerimit%E2%80%9DMigjeni-faq.54.pdf</a>
+        <br><br>Gjergj Fishta – Lahuta e Malcis
+        <br>3.	<a href="https://letersishqip.com/gjergj-fishta/krijime-letrare/">https://letersishqip.com/gjergj-fishta/krijime-letrare/</a>
+        <br>4.	<a href="https://it.wikipedia.org/wiki/Il_liuto_della_montagna">https://it.wikipedia.org/wiki/Il_liuto_della_montagna</a>
+        <br><br>Fan Noli – Fjalimi në Lidhjen e Kombeve
+        <br>5.	<a href="https://www.balkanweb.com/en/deklarata-e-fan-nolit-ne-1921-ne-lidhjen-e-kombeve-serbet-duan-te-pushtojne-malin-e-lures/">https://www.balkanweb.com/en/deklarata-e-fan-nolit-ne-1921-ne-lidhjen-e-kombeve-serbet-duan-te-pushtojne-malin-e-lures/</a>
+        <br>6.	<a href="https://en.wikipedia.org/wiki/Fan_Noli">https://en.wikipedia.org/wiki/Fan_Noli</a>
+        <br><br>Bibliografia e tekstit mediatik
+        <br>•	“The political media pots are rumbling” — Deklarata e Kryeministrit Edi Rama në rrjetin social X dhe e raportuar nga CNA Albania, datë 18.01.2026. 
+
+        </p>
+
+        <!-- PJESA E FSHEHUR -->
+        <div class="full-analysis">
+          <p>
+            “Tenxheret politike dhe mediatike po bubullojnë dhe po bëjnë aq shumë zhurmë, sa duket sikur jo Shqipëria është ftuar në tryezën e paqes të Presidentit Trump, por një vend armik i Shqipërisë!... GËNJESHTËR që Shqipëria do të paguajë 1 miliard euro. GËNJESHTËR që palestinezët do të vijnë në Shqipëri. GËNJESHTËR… E vërteta është shumë e thjeshtë… Tenxheret politike dhe mediatike të Parlamentit tonë janë vetëm kanaçe të zhurmshme të Shqipërisë së vjetër.”
+            <br><br><br>Kjo gjuhë mund të konsiderohet kritike dhe konfliktuale ndaj mediave, sepse nënkupton se disa media po përhapin informacione të gabuara apo të ekzagjeruara. Kjo është një formë komunikimi që politikanët herë-herë përdorin për të delegjitimuar kritikat dhe për të mbrojtur pozicionin e tyre, duke e paraqitur vetë si objekt të sulmeve jo të bazuara.
+
+          </p>
+        </div>
+      </div>
     </div>
+  </div>
   </section>
 
 </body>
+<script>
+  document.querySelectorAll(".read-more").forEach(button => {
+    button.addEventListener("click", () => {
+      const card = button.closest(".analysis-card");
+      card.classList.toggle("expanded");
+
+      button.textContent = card.classList.contains("expanded")
+        ? "Mbyll analizën ←"
+        : "Lexo analizën →";
+    });
+  });
+</script>
 </html>

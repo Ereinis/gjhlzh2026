@@ -66,6 +66,10 @@
       padding: 90px 64px 120px;
     }
 
+    .cases-page img{
+        background:linear-gradient(135deg,rgba(72, 61, 40, 0.658),rgba(11, 8, 4, 0.225));
+    }
+
     .cases-header {
       max-width: 760px;
       margin: 0 auto 70px;
@@ -79,10 +83,11 @@
     }
 
     .cases-header p {
-      font-size: 17px;
-      line-height: 1.7;
-      opacity: 0.85;
-    }
+        text-align: left;
+        line-height: 1.7;
+        font-size: 17px;
+        margin-bottom: 24px;
+        }
 
     /* ===== GRID ===== */
     .cases-grid {
@@ -134,6 +139,21 @@
       font-weight: 500;
       color: #f2c87c;
     }
+    .chart-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;        /* e bën më të largët nga teksti */
+}
+
+.chart-wrapper img {
+  width: 55%;              /* e bën më të vogël */
+  max-width: 650px;        /* nuk e bën shumë të madhe në desktop */
+  filter: brightness(0.65); /* e errëson imazhin */
+  border-radius: 12px;     /* e bën më bukur */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
 
     /* ===== RESPONSIVE ===== */
     @media (max-width: 768px) {
@@ -171,11 +191,16 @@
   <section class="cases-page">
 
     <div class="cases-header">
-      <h1>Multimedia</h1>
+      <h1>INTERAKTIVE</h1>
       <p>
-        Shembuj praktikë analizash letrare, komente fragmentesh dhe modele
-        përgjigjesh sipas kërkesave të provimeve dhe detyrave shkollore.
+        Fjala ka një ndikim të madh në mjedisin shkollor, pasi mënyra se si përdoret ndikon drejtpërdrejt në ndjenjat dhe marrëdhëniet mes nxënësve. Për të kuptuar më mirë peshën e fjalës dhe praninë e dhunës verbale në shkollë, u zhvillua një pyetësor me nxënës të grupmoshës 13–16 vjeç, ku u morën 100 përgjigje. Ky pyetësor synon të pasqyrojë perceptimet dhe përvojat e nxënësve mbi komunikimin dhe ndikimin e fjalëve në klimën emocionale të shkollës.
       </p>
+    </div>
+    <div class="chart-wrapper">
+        <img src="imazhe pyetsor/pytje1.jpg" alt="">
+    </div>
+    <div class="chart-wrapper">
+        <img src="imazhe pyetsor/pytje2.jpeg" alt="">
     </div>
 
     

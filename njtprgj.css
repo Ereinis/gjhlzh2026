@@ -2,7 +2,10 @@
 body{
 font-family:Inter,sans-serif;
 color:#f5d9a6;
-background-image:url("f68c2e07-cc6e-422e-9165-ca439879471c.png");
+  background:
+    linear-gradient(rgba(188, 157, 101, 0.578), rgba(172, 133, 78, 0.244)),
+    url("Jan\ 17\,\ 2026\,\ 09_43_19\ PM.png");
+
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
