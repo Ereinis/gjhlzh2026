@@ -62,7 +62,7 @@ nav a:hover{opacity:1}
     opacity:.9
 }
 .hero button{
-    background:linear-gradient(135deg,rgb(242, 200, 124),rgb(213, 155, 74));
+    background:linear-gradient(135deg,rgb(#dcbd60),rgb(#dcbd60));
     border:none;
     border-radius:12px;
     padding:14px 36px;
@@ -82,4 +82,66 @@ nav a:hover{opacity:1}
   line-height: 1.7;
   font-size: 17px;
   margin-bottom: 24px;
+}
+@media (max-width: 768px) {
+
+  header{
+    padding:18px 20px;
+  }
+
+  nav{
+    gap: 16px;
+    font-size: 14px;
+  }
+
+  .hero h1{
+    font-size: 44px;
+  }
+
+  .hero p{
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .hero button{
+    padding: 12px 26px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  header{
+    flex-direction:column;
+    gap: 12px;
+    align-items:flex-start;
+  }
+
+  nav{
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .logo{
+    font-size: 20px;
+  }
+
+  .hero{
+    padding: 40px 16px;
+  }
+
+  .hero h1{
+    font-size: 36px;
+  }
+
+  .hero p{
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .hero button{
+    width: 100%;
+    max-width: 260px;
+  }
+  
 }

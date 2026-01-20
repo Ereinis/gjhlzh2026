@@ -135,6 +135,39 @@
       color: #f2c87c;
     }
 
+    /* ===== VIDEO SECTION ===== */
+.video-section {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.video-box {
+  width: 50%;
+  background: rgba(32, 16, 8, 0.85);
+  border: 1px solid rgba(255, 190, 120, 0.35);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+.video-box video {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.video-caption {
+  margin-top: 14px;
+  font-size: 14px;
+  color: #f2c87c;
+  text-align: center;
+  opacity: 0.85;
+}
+
+
     /* ===== RESPONSIVE ===== */
     @media (max-width: 768px) {
       header {
@@ -172,11 +205,24 @@
 
     <div class="cases-header">
       <h1>Multimedia</h1>
-      <p>
-        Shembuj praktikë analizash letrare, komente fragmentesh dhe modele
-        përgjigjesh sipas kërkesave të provimeve dhe detyrave shkollore.
-      </p>
     </div>
+
+    <div class="video-section">
+      <h1>INTERVISTA</h1>
+  <div class="video-box">
+    <video controls>
+      <source src="WhatsApp Video 2026-01-20 at 8.59.11 AM.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="video-box">
+    <video controls>
+      <source src="WhatsApp Video 2026-01-20 at 8.59.37 AM.mp4" type="video/mp4">
+    </video>
+  </div>
+
+</div>
+
 
     
   </section>

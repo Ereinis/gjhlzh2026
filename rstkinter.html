@@ -16,16 +16,18 @@
     }
 
     body {
-      font-family: Inter, sans-serif;
-      color: #f5d9a6;
+        font-family: Inter, sans-serif;
+        color: #f5d9a6;
         background:
-    linear-gradient(rgba(188, 157, 101, 0.578), rgba(172, 133, 78, 0.244)),
-    url("Jan\ 17\,\ 2026\,\ 09_43_19\ PM.png");
-
-      background-size: cover;
-      background-position: center;
-      min-height: 100vh;
+            linear-gradient(rgba(188, 157, 101, 0.578), rgba(172, 133, 78, 0.244)),
+            url("Jan 17, 2026, 09_43_19 PM.png");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; /* ky ndryshim e mban fikse */
+        background-repeat: no-repeat;
+        min-height: 100vh;
     }
+
 
     /* ===== NAVBAR ===== */
     header {
@@ -148,28 +150,63 @@
 
 .chart-wrapper img {
   width: 55%;              /* e bën më të vogël */
-  max-width: 650px;        /* nuk e bën shumë të madhe në desktop */
-  filter: brightness(0.65); /* e errëson imazhin */
+  max-width: 700px;        /* nuk e bën shumë të madhe në desktop */
+  filter: brightness(1); /* e errëson imazhin */
   border-radius: 12px;     /* e bën më bukur */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.749);
 }
 
 
     /* ===== RESPONSIVE ===== */
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        gap: 16px;
-      }
+    @media (max-width: 1024px) {
+  .cases-page {
+    padding: 70px 28px 100px;
+  }
+}
 
-      .cases-page {
-        padding: 64px 24px 100px;
-      }
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
 
-      .cases-header h1 {
-        font-size: 42px;
-      }
-    }
+  nav {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .cases-page {
+    padding: 60px 18px 90px;
+  }
+
+  .cases-header h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cases-page {
+    padding: 50px 14px 80px;
+  }
+
+  .cases-header h1 {
+    font-size: 34px;
+  }
+
+  .cases-header p {
+    font-size: 15px;
+  }
+
+  .chart-wrapper img {
+    width: 90%;   /* më i vogël në telefon */
+    max-width: none;
+  }
+
+  .chart-wrapper {
+    margin-top: 18px;
+  }
+}
   </style>
 </head>
 
@@ -202,8 +239,54 @@
     <div class="chart-wrapper">
         <img src="imazhe pyetsor/pytje2.jpeg" alt="">
     </div>
-
-    
+    <div class="chart-wrapper">
+        <img src="imazhe pyetsor/pytje3.jpeg" alt="">
+    </div>
+    <div class="chart-wrapper">
+        <img src="imazhe pyetsor/pytje4.png" alt="">
+    </div>
+    <div class="chart-wrapper">
+        <img src="imazhe pyetsor/pytje5.png" alt="">
+    </div>
+    <div class="chart-wrapper">
+        <img src="imazhe pyetsor/pytje6.png" alt="">
+    </div>
+    <div class="chart-wrapper">
+        <img src="imazhe pyetsor/pytje7.png" alt="">
+    </div>
+    <div class="chart-wrapper">
+        <img src="imazhe pyetsor/pytje8.png" alt="">
+    </div>
+    <div class="chart-wrapper">
+        <img src="imazhe pyetsor/pytje9.png" alt="">
+    </div>
+    <div class="chart-wrapper">
+        <img src="imazhe pyetsor/pytje10.png" alt="">
+    </div>
+    <div class="chart-wrapper">
+        <img src="imazhe pyetsor/pytje11.png" alt="">
+    </div>
+    <div class="chart-wrapper">
+        <img src="imazhe pyetsor/pytje12.png" alt="">
+    </div>
+    <div class="chart-wrapper">
+        <img src="imazhe pyetsor/pytje13.png" alt="">
+    </div>
+    <div class="chart-wrapper">
+        <img src="imazhe pyetsor/pytje14.png" alt="">
+    </div>
+    <div class="chart-wrapper">
+        <img src="imazhe pyetsor/pytje15.png" alt="">
+    </div>
+    <div class="chart-wrapper">
+        <img src="imazhe pyetsor/pytje16.png" alt="">
+    </div>
+    <div class="chart-wrapper">
+        <img src="imazhe pyetsor/pytje17.png" alt="">
+    </div>
+    <div class="chart-wrapper">
+        <img src="imazhe pyetsor/pytje18.png" alt="">
+    </div>
   </section>
 
 </body>

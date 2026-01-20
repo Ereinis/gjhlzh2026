@@ -95,7 +95,7 @@
 
     /* ===== CARD ===== */
     .analysis-card {
-      background: rgba(35, 18, 10, 0.85);
+      background:linear-gradient(135deg,#b5651d,#f68c2f);
       border: 1px solid rgba(255, 190, 120, 0.3);
       border-radius: 16px;
       padding: 28px;
@@ -146,24 +146,76 @@
     }
 
 
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        gap: 16px;
-      }
+    @media (max-width: 1024px) {
+  .analysis-page {
+    padding: 60px 32px 100px;
+  }
 
-      .analysis-page {
-        padding: 64px 24px 100px;
-      }
+  header {
+    padding: 18px 30px;
+  }
 
-      .analysis-header h1 {
-        font-size: 40px;
-      }
-    }
-    .analysis-card.expanded {
-      border-color: rgba(255, 200, 140, 0.8);
-    }
+  .analysis-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .analysis-page {
+    padding: 50px 20px 90px;
+  }
+
+  .analysis-header h1 {
+    font-size: 40px;
+  }
+
+  .analysis-card {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .analysis-header h1 {
+    font-size: 32px;
+  }
+
+  .analysis-header p {
+    font-size: 15px;
+  }
+
+  .analysis-card h3 {
+    font-size: 18px;
+  }
+
+  .analysis-card p {
+    font-size: 14px;
+  }
+
+  .analysis-card {
+    padding: 18px;
+  }
+
+  .read-more {
+    font-size: 13px;
+  }
+}
+
+.analysis-card.expanded {
+  border-color: rgba(255, 200, 140, 0.8);
+}
 
   </style>
 </head>
